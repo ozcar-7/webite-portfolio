@@ -1,0 +1,399 @@
+/* Reset margin and padding for all elements, set box-sizing and font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+/* Style for the body */
+body {
+    background-color: #fff; /* Light grey background */
+    color: #001f3f; /* Dark text color */
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: light;
+}
+
+/* Header styling */
+header {
+    background-color: #000; /* Black background */
+    padding: 15px;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between name and nav items */
+    padding: 0 10%; /* Optional: Adjust padding if needed */
+}
+
+.name-top {
+    color: #ffffff; /* White text color */
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Display list items in a row */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between items */
+}
+
+nav ul li a {
+    color: #ffffff; /* White text */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main content container styling */
+.content-container {
+    display: flex;
+    justify-content: space-around; /* Space out the children evenly */
+    align-items: flex-start; /* Align items to the top */
+    height: 80vh; /* Take 80% of viewport height */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin-bottom: 50px; /* Adjust this value to increase space */
+}
+
+
+/* Styling for left side content */
+.left-side {
+    width: 25%; /* Each side takes 25% of the container width */
+    color: #001f3f; /* White text color */
+}
+.hello{
+    font-size: 60px;
+    text-align: right;
+    padding: 0%;
+}
+.student{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+}
+/* Styling for right side content */
+.right-side {
+    width: 25%; /* Each side takes 25% of the container width */
+    color: #001f3f; /* White text color */
+}
+.i{
+    font-size: 60px;
+    text-align: left;
+}
+.write{
+    text-align: left;
+    font-size: 25px;
+}
+/* Styling for middle section with profile picture */
+.middle {
+    width: 50%; /* Middle section takes 50% of the container width */
+    text-align: center; /* Center text and image */
+    padding-top: 0px;
+}
+
+#profile-picture {
+    width: 90%; /* Full width of the container */
+}
+
+h1{
+    text-align: center;
+    background-color: #ffffff;
+    font-weight: 450;
+    font-size: 60px;
+    color: #001f3f;
+}
+h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    color: #001f3f;
+}
+
+.project-content-container {
+    display: flex;
+    justify-content: space-around; /* Space out the children evenly */
+    align-items: flex-start; /* Align items to the top */
+    height: 50vh; /* Take 50% of viewport height */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+}
+
+.project-box{
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    border: 3px solid #000; /* Navy blue border */
+    padding: 20px; /* Space inside the box */
+    margin: 20px; /* Space outside the box */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    color: #001f3f;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.project-box:hover {
+    background-color: #cfcfcf; /* Light grey background on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.work-content-container {
+    display: flex;
+    justify-content: space-around; /* Space out the children evenly */
+    align-items: flex-start; /* Align items to the top */
+    height: 50vh; /* Take 80% of viewport height */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+}
+
+.timeline-container {
+    justify-content: space-around; /* Space out the children evenly */
+    align-items: flex-start; /* Align items to the top */
+    background-color: #ffffff; /* White background */
+    padding: 40vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    position: relative; /* Ensures that the timeline elements are positioned relative to this container */
+    z-index: 1;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #001f3f;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.timeline-point {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.timeline-point::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #001f3f;
+}
+
+.timeline-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px ;
+}
+
+.timeline-content.top {
+    top: -130px;
+}
+
+.timeline-content.bottom {
+    top: 30px;
+}
+
+h3 {
+    margin: 0 0 5px;
+    font-size: 25px;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+.timeline-image {
+    position: absolute; /* Ensure the image is positioned relative to the timeline point */
+    top: 50%;
+    left: 100%;
+    transform: translate(-85%, -50%); /* Center the image horizontally and vertically */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 4; /* Higher z-index to make sure it displays above other elements */
+}
+
+
+.timeline-point:hover .timeline-image {
+    opacity: 1;
+    visibility: visible;
+}
+
+.timeline-image img {
+    width: 80dvh; /* Adjust width as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+
+} 
+
+.skill-bar {
+    position: relative;
+    background-color: #cfcfcf;
+    border-radius: 25px;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+
+.skill-bar-inner {
+    height: 30px;
+    background-color: #001f3f; /* Navy blue */
+    border-radius: 25px;
+    width: 0; /* Start width at 0 */
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    transition: width 1s ease-out;
+}
+
+.skill-bar-inner span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill-bar-inner[data-skill] {
+    width: var(--skill-width);
+}
+
+/* Card container */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.contact-card {
+    width: 450px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+/* Style for the front of the card */
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 4px solid #001f3f;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+    transition: transform 0.8s ease-in-out;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Style for the back of the card */
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: transform 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #001f3f;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+/* Animation for the card flip */
+.contact-card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.contact-card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+/* Text styles */
+.card-text {
+    text-align: center;
+    padding: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #001f3f; /* Navy Blue */
+    font-size: 24px; /* Adjust size as needed */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    color: #0056b3; /* Slightly brighter navy on hover */
+}
+
+
+/* Footer styling */
+.footer-border {
+    background-color: #dbdbdb; /* White background */
+    color: #001f3f; /* Dark text color */
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #001f3f; /* Navy blue border on top */
+    font-size: 25px;
+    font-weight: 500;
+}
